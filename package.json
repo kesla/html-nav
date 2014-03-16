@@ -1,0 +1,29 @@
+{
+  "name": "html-nav",
+  "version": "0.0.0",
+  "description": "Create a navigation based on header-elements (e.g h1)",
+  "main": "html-menu.js",
+  "dependencies": {
+    "trumpet": "^1.6.3"
+  },
+  "devDependencies": {
+    "tape": "^2.10.2"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kesla/html-nav.git"
+  },
+  "keywords": [
+    "nav",
+    "html"
+  ],
+  "author": "David Björklund <david.bjorklund@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kesla/html-nav/issues"
+  },
+  "homepage": "https://github.com/kesla/html-nav"
+}
