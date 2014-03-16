@@ -1,6 +1,6 @@
 {
   "name": "html-nav",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Create a navigation based on header-elements (e.g h1)",
   "main": "html-menu.js",
   "dependencies": {
