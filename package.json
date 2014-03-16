@@ -1,7 +1,7 @@
 {
   "name": "html-nav",
   "version": "1.0.0",
-  "description": "Create a navigation based on header-elements (e.g h1)",
+  "description": "Create a JSON-tree based on header-elements (e.g h1) to be used in navigation",
   "main": "html-menu.js",
   "dependencies": {
     "trumpet": "^1.6.3"

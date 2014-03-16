@@ -1,11 +1,11 @@
-# html-menu
+# html-nav
 
-Create a navigation based on header-elements (e.g h1)
+Create a JSON-tree based on header-elements (e.g h1) to be used in navigation
 
 ## Installation
 
 ```
-npm install html-menu
+npm install html-nav
 ```
 
 ## Example
@@ -13,23 +13,19 @@ npm install html-menu
 ```javascript
 var htmlNav = require('./html-nav')
 
-  , stream = htmlNav()
+  , stream = new require('stream').PassThrough()
 
-console.log(stream.read())
+stream.write('<h1 id="foo">Hello</h1>\n')
+stream.write('<p id="bar">Beep boop')
+stream.write('<span id="foo">woop woop!</span>')
+stream.write('</p>\n')
+stream.write('<h2 id="foo2">OMG!</h2>\n')
+stream.write('<h1 id="foo3">Some more foo</h1>')
+stream.end()
 
-stream.on('readable', function () {
-  console.log(stream.read())
+htmlNav(stream, function (err, tree) {
+  console.log(JSON.stringify(tree, null, '  '))
 })
-
-// stream.pipe(process.stdout);
-
-// stream.write('<h1 id="foo">Hello</h1>\n')
-// stream.write('<p id="bar">Beep boop')
-// stream.write('<span id="foo">woop woop!</span>')
-// stream.write('</p>\n')
-// stream.write('<h2 id="foo2">OMG!</h2>\n')
-// stream.write('<h1 id="foo3">Some more foo</h1>')
-// stream.end()
 ```
 
 ## Licence
