@@ -10,6 +10,8 @@ npm install html-nav
 
 ## Example
 
+### Input
+
 ```javascript
 var htmlNav = require('./html-nav')
 
@@ -26,6 +28,29 @@ stream.end()
 htmlNav(stream, function (err, tree) {
   console.log(JSON.stringify(tree, null, '  '))
 })
+```
+
+### Output
+
+```
+[
+  {
+    "title": "Hello",
+    "id": "foo",
+    "children": [
+      {
+        "title": "OMG!",
+        "id": "foo2",
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "Some more foo",
+    "id": "foo3",
+    "children": []
+  }
+]
 ```
 
 ## Licence
