@@ -4,7 +4,9 @@
   "description": "Create a JSON-tree based on header-elements (e.g h1) to be used in navigation",
   "main": "html-menu.js",
   "dependencies": {
-    "trumpet": "^1.6.3"
+    "htmlparser2": "^3.7.1",
+    "domutils": "^1.4.1",
+    "cornet": "^0.1.5"
   },
   "devDependencies": {
     "tape": "^2.10.2"
